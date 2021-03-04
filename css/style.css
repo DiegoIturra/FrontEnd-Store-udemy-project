@@ -69,5 +69,37 @@ h3{
 
 /****************************** Clases ******************************/
 
+/*Para este proyecto se usará la convencion BEM*/
 
+/************ Header ************/
+.header{
+    display: flex;
+    justify-content: center;
+}
 
+.header__logo{
+    margin: 3rem 0;
+}
+
+/********** Navbar ***************/
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+
+    /*Centra el contenido del navbar*/
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /*añade un espaciado de 20px entre elemntos dentro del flexbox*/
+}
+
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundario);
+}
