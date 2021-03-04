@@ -103,3 +103,30 @@ h3{
 .navegacion__enlace:hover{
     color: var(--secundario);
 }
+
+
+/*Este pseudo selector sirve para cuando se agreguen
+mas elementos a la barra de navegacion , el ultimo 
+elemento no tendrá un margen hacia la derecha y poder
+mantener el centrado de forma correcta , esto se puede
+aplicar cuando en vez de usar gap ,usar margin*/
+
+/*
+.navegacion__enlace:last-of-type{
+    margin-right: 0;
+}
+*/
+
+
+/********** Footer *********/
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    text-align: center;
+}
