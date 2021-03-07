@@ -202,3 +202,34 @@ aplicar cuando en vez de usar gap ,usar margin*/
     }
 }
 
+/****************** Seccion Nosotros *******************************/
+
+/*Cuando es en un dispositivo movil , se divide en 
+2 filas a diferencia de PC que son dos columnas*/
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+@media (min-width: 768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.nosotros__contenido{
+
+}
+
+.nosotros__imagen{
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .nosotros__imagen{
+        grid-column-start: 2    ;
+    }
+}
