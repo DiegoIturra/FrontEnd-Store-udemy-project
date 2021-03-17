@@ -219,9 +219,6 @@ aplicar cuando en vez de usar gap ,usar margin*/
     }
 }
 
-.nosotros__contenido{
-
-}
 
 .nosotros__imagen{
     grid-row: 1 / 2;
@@ -233,3 +230,30 @@ aplicar cuando en vez de usar gap ,usar margin*/
         grid-column-start: 2    ;
     }
 }
+
+
+/**************** Bloques (Seccion Nosotros) *************/
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/*media query para pantalla pc (bloques de muestran en horizontal)*/
+@media (min-width: 768px){
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+.bloque__imagen{
+    width: 70%;
+}
+
